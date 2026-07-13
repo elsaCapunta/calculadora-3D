@@ -1,0 +1,4 @@
+.margen-mode-switch { display: flex; gap: 6px; }
+.margen-mode-btn { flex: 1; padding: 8px 8px; border-radius: 7px; font-size: 11px; font-weight: 600; background: #0e0e15; border: 1px solid #2a2a36; color: #7a7a8c; cursor: pointer; font-family: 'Inter', sans-serif; transition: all .15s; }
+.margen-mode-btn:hover:not(.active) { border-color: #45455a; color: #c4c4d4; }
+.margen-mode-btn.active { background: #2a1500; border-color: #ff6b35; color: #ff6b35; }

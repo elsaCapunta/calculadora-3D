@@ -1,0 +1,4 @@
+.number-input-wrap { display: flex; align-items: center; gap: 8px; background: #0e0e15; border: 1px solid #2a2a36; border-radius: 7px; padding: 7px 10px; }
+.number-input-wrap input[type="number"] { flex: 1; background: transparent; border: none; outline: none; color: #e2e2e8; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; width: 100%; }
+.number-input-wrap input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; }
+.unit-label { font-size: 11px; color: #45455a; white-space: nowrap; }

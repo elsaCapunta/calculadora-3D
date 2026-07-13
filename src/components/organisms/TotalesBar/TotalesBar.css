@@ -1,0 +1,7 @@
+.totales-bar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 20px; }
+.total-card { background: #18181f; border: 1px solid #2a2a36; border-radius: 10px; padding: 14px 16px; }
+.total-card-label { font-size: 10px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: #55556a; margin-bottom: 4px; }
+.total-card-val { font-family: 'JetBrains Mono', monospace; font-size: 20px; font-weight: 700; color: #f0f0f6; }
+.total-card.highlight { background: #1a1000; border-color: #ff6b35; }
+.total-card.highlight .total-card-val { color: #ff6b35; }
+@media (max-width: 600px) { .totales-bar { grid-template-columns: 1fr 1fr; } }

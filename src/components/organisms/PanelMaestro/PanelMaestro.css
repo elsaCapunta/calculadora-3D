@@ -1,0 +1,4 @@
+.maestro-card { background: #18181f; border: 1px solid #2a2a36; border-radius: 12px; padding: 18px; margin-bottom: 20px; display: flex; flex-direction: column; gap: 14px; }
+.maestro-card-title { font-size: 13px; font-weight: 700; color: #f0f0f6; }
+.maestro-card-hint { font-size: 11px; font-weight: 500; color: #55556a; text-transform: none; letter-spacing: normal; }
+.printer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; }

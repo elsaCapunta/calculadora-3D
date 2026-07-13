@@ -1,0 +1,2 @@
+.add-btn { width: 100%; padding: 13px; background: #13131a; border: 1px dashed #3a3a4a; border-radius: 12px; color: #55556a; font-size: 13px; font-weight: 600; cursor: pointer; font-family: 'Inter', sans-serif; transition: all .15s; margin-bottom: 24px; }
+.add-btn:hover { border-color: #ff6b35; color: #ff6b35; background: #1a1008; }

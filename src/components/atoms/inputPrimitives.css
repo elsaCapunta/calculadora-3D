@@ -1,0 +1,5 @@
+.input-group { display: flex; flex-direction: column; gap: 5px; }
+.input-label-row { display: flex; justify-content: space-between; align-items: center; }
+.input-label-row label { font-size: 12px; font-weight: 500; color: #c4c4d4; }
+.input-value { font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; color: #ff6b35; }
+.input-help { font-size: 11px; color: #45455a; line-height: 1.4; }

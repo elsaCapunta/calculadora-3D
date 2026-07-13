@@ -1,0 +1,2 @@
+.mini-section { background: #13131a; border: 1px solid #222230; border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 12px; }
+.mini-section-title { font-size: 11px; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; color: #55556a; }

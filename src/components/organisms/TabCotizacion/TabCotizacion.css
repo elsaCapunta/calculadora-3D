@@ -1,0 +1,37 @@
+.cot-form { display: flex; flex-direction: column; gap: 20px; }
+.cot-section { background: #18181f; border: 1px solid #2a2a36; border-radius: 12px; overflow: hidden; }
+.cot-section-title { padding: 12px 18px; font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: #7a7a8c; background: #13131a; border-bottom: 1px solid #2a2a36; }
+.cot-grid { padding: 18px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+@media (max-width: 600px) { .cot-grid { grid-template-columns: 1fr; } }
+.field-error { font-size: 11px; color: #ff5555; margin-top: 3px; }
+
+.logo-upload-area { margin: 16px 18px; border: 2px dashed #2a2a36; border-radius: 10px; cursor: pointer; transition: border-color .15s; overflow: hidden; min-height: 80px; display: flex; align-items: center; justify-content: center; }
+.logo-upload-area:hover { border-color: #ff6b35; }
+.logo-upload-placeholder { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 24px; color: #45455a; }
+.logo-upload-icon { font-size: 24px; }
+.logo-upload-placeholder span { font-size: 13px; }
+.logo-upload-hint { font-size: 11px !important; color: #35354a !important; }
+.logo-preview-img { max-height: 100px; max-width: 100%; object-fit: contain; padding: 12px; }
+.logo-remove-btn { display: block; margin: 0 18px 16px; background: transparent; border: 1px solid #2a2a36; border-radius: 6px; color: #55556a; font-size: 12px; padding: 5px 12px; cursor: pointer; font-family: 'Inter', sans-serif; transition: all .15s; }
+.logo-remove-btn:hover { border-color: #ff4444; color: #ff4444; }
+
+.cot-consent-box { display: flex; gap: 14px; padding: 18px; }
+.cot-consent-icon { font-size: 24px; flex-shrink: 0; }
+.cot-consent-text { display: flex; flex-direction: column; gap: 10px; }
+.cot-consent-title { font-size: 13px; font-weight: 600; color: #c4c4d4; }
+.cot-consent-text p { font-size: 12px; color: #7a7a8c; line-height: 1.6; }
+.cot-consent-check { display: flex; gap: 10px; align-items: flex-start; cursor: pointer; font-size: 12px; color: #a0a0b8; line-height: 1.5; }
+.cot-consent-check input[type="checkbox"] { margin-top: 2px; flex-shrink: 0; accent-color: #ff6b35; width: 14px; height: 14px; }
+.cot-consent-check.error { color: #ff5555; }
+
+.cot-warning { background: #1a1200; border: 1px solid #7a5a00; border-radius: 10px; padding: 14px 16px; font-size: 13px; color: #c4a030; }
+.cot-preview-btn { width: 100%; padding: 14px; background: #ff6b35; border: none; border-radius: 10px; color: #fff; font-size: 14px; font-weight: 700; cursor: pointer; font-family: 'Inter', sans-serif; transition: all .15s; }
+.cot-preview-btn:hover:not(.disabled) { background: #ff8050; }
+.cot-preview-btn.disabled { opacity: .4; cursor: not-allowed; background: #55556a; }
+
+.cot-toolbar { display: flex; gap: 10px; margin-bottom: 14px; align-items: center; flex-wrap: wrap; }
+.cot-back-btn { padding: 9px 16px; background: transparent; border: 1px solid #2a2a36; border-radius: 8px; color: #7a7a8c; font-size: 13px; font-weight: 600; cursor: pointer; font-family: 'Inter', sans-serif; transition: all .15s; }
+.cot-back-btn:hover { border-color: #7a7a8c; color: #c4c4d4; }
+.cot-print-btn { padding: 9px 20px; background: #ff6b35; border: none; border-radius: 8px; color: #fff; font-size: 13px; font-weight: 700; cursor: pointer; font-family: 'Inter', sans-serif; transition: all .15s; }
+.cot-print-btn:hover:not(:disabled) { background: #ff8050; }
+.cot-print-btn:disabled { opacity: .6; cursor: wait; }

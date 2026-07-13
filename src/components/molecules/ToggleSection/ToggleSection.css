@@ -1,0 +1,4 @@
+.opt-panel { background: #13131a; border: 1px solid #222230; border-radius: 10px; overflow: hidden; }
+.opt-panel.panel-disabled { opacity: .45; }
+.opt-panel-title { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; font-size: 11px; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; color: #55556a; }
+.opt-panel-body { padding: 14px; display: flex; flex-direction: column; gap: 12px; border-top: 1px solid #222230; }

@@ -1,0 +1,4 @@
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid #2a2a36; margin-bottom: 24px; margin-top: 20px; }
+.tab-btn { padding: 10px 20px; font-size: 13px; font-weight: 600; background: transparent; border: none; border-bottom: 2px solid transparent; color: #55556a; cursor: pointer; font-family: 'Inter', sans-serif; transition: all .15s; margin-bottom: -1px; }
+.tab-btn:hover { color: #c4c4d4; }
+.tab-btn.active { color: #ff6b35; border-bottom-color: #ff6b35; }
