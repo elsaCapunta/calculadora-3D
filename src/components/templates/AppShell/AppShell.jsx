@@ -20,7 +20,8 @@ export function AppShell({ activeTab, onTabChange, children }) {
       {children}
 
       <div className="app-footer no-print">
-        Desarrollado por <strong>loopa-store</strong> con ❤️ — sin fines de lucro, solo las ganas de aportar a la comunidad.
+        <p>Desarrollado por <strong>loopa-store</strong> con ❤️ — sin fines de lucro, solo las ganas de aportar a la comunidad.</p>
+        <p className="app-footer-version">v.1.0.0</p>
       </div>
     </div>
   );
