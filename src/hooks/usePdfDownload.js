@@ -11,6 +11,7 @@ export function usePdfDownload(previewRef, filename) {
     setDescargando(true);
     setErrorPdf("");
     try {
+      await document.fonts.ready;
       const canvas = await html2canvas(previewRef.current, { scale: 2, backgroundColor: "#ffffff" });
       const imgData = canvas.toDataURL("image/jpeg", 0.95);
 
