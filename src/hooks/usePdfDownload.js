@@ -26,10 +26,12 @@ export function usePdfDownload(previewRef, filename) {
       await document.fonts.ready;
 
       const node = previewRef.current;
-      const nodeStyle = getComputedStyle(node);
-      const paddingLeftPx = parseFloat(nodeStyle.paddingLeft) || 0;
-      const paddingRightPx = parseFloat(nodeStyle.paddingRight) || 0;
-      const nodeWidthPx = node.getBoundingClientRect().width;
+      // previewRef envuelve a <CotizacionPreview>: el padding real vive en su raíz .pdf-preview, no en el wrapper.
+      const styledEl = node.querySelector(".pdf-preview") || node;
+      const styledElStyle = getComputedStyle(styledEl);
+      const paddingLeftPx = parseFloat(styledElStyle.paddingLeft) || 0;
+      const paddingRightPx = parseFloat(styledElStyle.paddingRight) || 0;
+      const nodeWidthPx = styledEl.getBoundingClientRect().width;
 
       const canvas = await html2canvas(node, { scale: 2, backgroundColor: "#ffffff" });
       const imgData = canvas.toDataURL("image/jpeg", 0.95);
