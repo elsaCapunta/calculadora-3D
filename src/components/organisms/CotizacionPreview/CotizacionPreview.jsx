@@ -1,5 +1,5 @@
 import { fmt, today } from "../../../domain/formato";
-import "./CotizacionPreview.css";
+import cotizacionPreviewCss from "./CotizacionPreview.css?inline";
 
 export function CotizacionPreview({ cot, items, calcs, totales }) {
   const neto = totales.venta / 1.19;
@@ -7,6 +7,7 @@ export function CotizacionPreview({ cot, items, calcs, totales }) {
 
   return (
     <div className="pdf-preview">
+      <style>{cotizacionPreviewCss}</style>
       {/* Encabezado */}
       <div className="pdf-header">
         <div className="pdf-logo-block">
