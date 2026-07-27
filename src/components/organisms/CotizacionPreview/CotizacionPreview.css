@@ -1,4 +1,6 @@
 .pdf-preview { background: #fff; color: #1a1a2e; border-radius: 10px; padding: 40px 48px; font-family: 'Inter', sans-serif; max-width: 800px; margin: 0 auto; box-shadow: 0 4px 32px rgba(0,0,0,.4); }
+/* letter-spacing casi imperceptible: workaround del bug de html2canvas que colapsa espacios entre palabras al medir texto en canvas */
+.pdf-preview * { letter-spacing: 0.01px; }
 .pdf-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; margin-bottom: 24px; }
 .pdf-logo-block { display: flex; gap: 16px; align-items: flex-start; flex: 1; }
 .pdf-logo { max-height: 70px; max-width: 130px; object-fit: contain; }

@@ -1,4 +1,5 @@
 import { fmt, today } from "../../../domain/formato";
+import { PDF_FOOTER_LINES } from "../../../domain/pdfFooterText";
 import cotizacionPreviewCss from "./CotizacionPreview.css?inline";
 
 export function CotizacionPreview({ cot, items, calcs, totales }) {
@@ -91,10 +92,10 @@ export function CotizacionPreview({ cot, items, calcs, totales }) {
         </div>
       )}
 
-      {/* Footer legal */}
-      <div className="pdf-footer">
-        <p>Los precios incluyen IVA (19%). Esta cotización tiene validez de 30 días desde su emisión.</p>
-        <p className="pdf-footer-privacy">Los datos personales del cliente son utilizados exclusivamente para generar esta cotización y no son almacenados en ninguna base de datos, en cumplimiento con la Ley N° 19.628 sobre Protección de la Vida Privada y sus modificaciones vigentes.</p>
+      {/* Footer legal — excluido de la captura de html2canvas: se dibuja como texto nativo en el PDF, anclado al pie de la última página */}
+      <div className="pdf-footer" data-html2canvas-ignore="true">
+        <p>{PDF_FOOTER_LINES[0].text}</p>
+        <p className="pdf-footer-privacy">{PDF_FOOTER_LINES[1].text}</p>
       </div>
     </div>
   );
